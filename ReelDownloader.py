@@ -192,7 +192,7 @@ def download_instagram_reels_sssinstagram(reel_url, temp_folder, videos_folder, 
         return 0
 
 # Add this function to handle retries
-def download_with_retry(reel_url, temp_folder, videos_folder, counter, links_file, max_retries=7):
+def download_with_retry(reel_url, temp_folder, videos_folder, counter, links_file, max_retries=4):
     print(f"[LOG] Starting download_with_retry for reel: {reel_url}")
     attempt = 0
     success = False
